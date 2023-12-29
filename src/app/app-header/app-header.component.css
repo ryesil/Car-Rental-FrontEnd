@@ -1,0 +1,8 @@
+.spacer{
+flex: 1 1 auto;
+}
+
+.custom-select mat-select-arrow {
+    /* Hide the default arrow */
+    display: none;
+}

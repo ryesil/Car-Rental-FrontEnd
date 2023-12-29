@@ -1,0 +1,9 @@
+body {
+    /* background-image: url('../../assets/home.jpg'); */
+    background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+    background-position: center center; /* Adjust as needed: center, top, bottom, left, right, etc. */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fixed background */
+    width: 100%;
+    /* Additional styles if needed */
+  }

@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    <ul class="nav nav-tabs">
+        <li class="nav-item col-2" >
+          <a (click)="onTabClicked(0)" [ngClass]="{'active' : isClicked === 0, 'text-white': isClicked === 0, 'bg-primary':isClicked === 0}" class="d-flex align-items-center justify-content-center" style="height: 75px;"  aria-current="page">Reservations</a>
+        </li>
+        <li class="nav-item col-2">
+          <a (click)="onTabClicked(1)" [ngClass]="{'active' : isClicked === 1, 'text-white': isClicked === 1, 'bg-primary':isClicked === 1}" class="d-flex align-items-center justify-content-center" style="height: 75px;" >Vehicles</a>
+        </li> 
+        <li class="nav-item col-2">
+          <a (click)="onTabClicked(2)" [ngClass]="{'active' : isClicked === 2, 'text-white': isClicked === 2, 'bg-primary':isClicked === 2}" class="d-flex align-items-center justify-content-center" style="height: 75px;">Locations</a>
+        </li>
+        <li class="nav-item col-2">
+          <a (click)="onTabClicked(3)" [ngClass]="{'active' : isClicked === 3, 'text-white': isClicked === 3, 'bg-primary':isClicked === 3}" class="d-flex align-items-center justify-content-center" style="height: 75px;">Car Sales</a>
+        </li>
+        <li class="nav-item col-2">
+            <a (click)="onTabClicked(4)" [ngClass]="{'active' : isClicked === 4, 'text-white': isClicked === 4, 'bg-primary':isClicked === 4}" class="d-flex align-items-center justify-content-center" style="height: 75px;">For Business</a>
+          </li>
+          <li class="nav-item col-2">
+            <a (click)="onTabClicked(5)" [ngClass]="{'active' : isClicked === 5, 'text-white': isClicked === 5, 'custom-active':isClicked === 5}" class="d-flex align-items-center justify-content-center" style="height: 75px;">Learn</a>
+          </li>
+      </ul>
+</div>
+
+
+<!-- <mat-tab-group #matGroup >
+  <mat-tab ></mat-tab>
+  <mat-tab label="reservations" isActive="false" >
+    <ng-template mat-tab-label>
+      <div class="tab-label" (click)="onTabClicked(matGroup)">Reservations</div>
+    </ng-template>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2">
+          <table class="table table-hover  table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Car Rental</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor=" let rentalLink of rentalLinks; ">
+                <td><a class="nav-link text-decoration-none" [routerLink]="rentalLink.link">{{rentalLink.text}}</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-1 d-flex align-items-center">
+          <div class="border-end border-2" style="height: 80%; width: 50%;"></div>
+        </div>
+        <div class="col-2">
+          <table class="table table-hover  table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Car Rental</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor=" let rentalLink of rentalLinks; ">
+                <td><a style="height: 30px;" class="nav-link text-decoration-none align-middle" [routerLink]="rentalLink.link">{{rentalLink.text}}</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-1 d-flex align-items-center">
+          <div class="border-end border-2" style="height: 80%; width: 50%;"></div>
+        </div>
+        <div class="col-2">
+          <table class="table table-hover  table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Car Rental</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor=" let rentalLink of rentalLinks; ">
+                <td><a class="nav-link text-decoration-none" [routerLink]="rentalLink.link">{{rentalLink.text}}</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="vehicles"> Content 2 </mat-tab>
+  <mat-tab label="locations"> Content 3 </mat-tab>
+  <mat-tab label="car-sales"> Content 3 </mat-tab>
+  <mat-tab label="for-business"> Content 3 </mat-tab>
+  <mat-tab label="learn"> Content 3 </mat-tab>
+
+</mat-tab-group> -->

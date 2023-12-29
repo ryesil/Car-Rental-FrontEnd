@@ -1,1 +1,8 @@
-<h1>{{title}}</h1>
+<app-overlay [isOverLayOpen]=false></app-overlay>
+<app-app-header></app-app-header>
+<app-primary-nav></app-primary-nav>
+<div class="row">
+    <div class="col-12 h-25">
+        <router-outlet></router-outlet>
+    </div>
+</div>

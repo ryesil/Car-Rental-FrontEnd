@@ -1,0 +1,12 @@
+a{
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  background-color: #673ab7;
+  color:rgb(255,255,255);
+}
+
+.custom-active{
+  background-color: #673ab7;
+}

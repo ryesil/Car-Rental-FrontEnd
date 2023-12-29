@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <table class="table table-hover  table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Car Rental</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor=" let rentalLink of rentalLinks; ">
+              <td><a class="nav-link text-decoration-none" [routerLink]="rentalLink.link">{{rentalLink.text}}</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-1 d-flex align-items-center">
+        <div class="border-end border-2" style="height: 80%; width: 50%;"></div>
+      </div>
+      <div class="col-2">
+        <table class="table table-hover  table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Car Rental</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor=" let rentalLink of rentalLinks; ">
+              <td><a class="nav-link text-decoration-none" [routerLink]="rentalLink.link">{{rentalLink.text}}</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-1 d-flex align-items-center">
+        <div class="border-end border-2" style="height: 80%; width: 50%;"></div>
+      </div>
+      <div class="col-2">
+        <table class="table table-hover  table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Car Rental</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor=" let rentalLink of rentalLinks; ">
+              <td><a class="nav-link text-decoration-none" [routerLink]="rentalLink.link">{{rentalLink.text}}</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
