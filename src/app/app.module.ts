@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import {MaterialModule} from './shared/material.module';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminActiveDirective } from './shared/directives/admin-active.directive';
 import { OverlayComponent } from './overlay/overlay.component';
 import { RentACarComponent } from './rent-acar/rent-acar.component';
+import { ReserveVehicleComponent } from './reserve-vehicle/reserve-vehicle.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { RentACarComponent } from './rent-acar/rent-acar.component';
     HomeComponent,
     AdminActiveDirective,
     OverlayComponent,
-    RentACarComponent
+    RentACarComponent,
+    ReserveVehicleComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { RentACarComponent } from './rent-acar/rent-acar.component';
     MaterialModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

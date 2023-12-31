@@ -7,6 +7,12 @@ import {MatSelectModule} from '@angular/material/select';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';;
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +25,12 @@ import {MatDividerModule} from '@angular/material/divider';
     MatSelectModule,
     OverlayModule,
     MatTabsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatFormFieldModule,
+    MatButtonToggleModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatRadioModule
 
   ]
 })
