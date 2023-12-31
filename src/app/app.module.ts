@@ -20,6 +20,7 @@ import { AdminActiveDirective } from './shared/directives/admin-active.directive
 import { OverlayComponent } from './overlay/overlay.component';
 import { RentACarComponent } from './rent-acar/rent-acar.component';
 import { ReserveVehicleComponent } from './reserve-vehicle/reserve-vehicle.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ReserveVehicleComponent } from './reserve-vehicle/reserve-vehicle.compo
     AdminActiveDirective,
     OverlayComponent,
     RentACarComponent,
-    ReserveVehicleComponent
+    ReserveVehicleComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,7 @@ import { ReserveVehicleComponent } from './reserve-vehicle/reserve-vehicle.compo
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
