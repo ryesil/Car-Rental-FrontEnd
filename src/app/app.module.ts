@@ -21,6 +21,7 @@ import { OverlayComponent } from './overlay/overlay.component';
 import { RentACarComponent } from './rent-acar/rent-acar.component';
 import { ReserveVehicleComponent } from './reserve-vehicle/reserve-vehicle.component';
 import { MapComponent } from './map/map.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { MapComponent } from './map/map.component';
     AppRoutingModule,
     FormsModule,
     CommonModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
